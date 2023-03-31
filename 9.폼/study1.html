@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼(양식)태그 - form</title>
+</head>
+<body>
+    <h1>from</h1>
+    <p>홈페이지를 사용하는 사용자가 내용을 입력할 수 있도록 미리 제공하는 양식태그</p>
+    <p>label태그는 이름표 태그로 사용하며 사용자가 입력하는 입력박스에 대한 이름을 달아줄 때 사용한다</p>
+    <p>label태그와 input태그를 서로 연결하기 위해서는 input태그의 id값을 laber태그의 for속성에 그대로 적용한다
+        -> 홈페이지의 사용편의를 위해 자주 사용하는 패턴</p>
+    <p>label태그가 디자인적으로 보이지 않더라도 실제로 html에서는 label태그는 구성해야하며 css에서 안보이게 처리하는 방법을 사용한다</p>
+    <p>input type 속성이 radio인 경우 select태그와 같이 제한된 내용을 입력하게끔 유도할 때 사용하며, radio버튼의 name속성 값을 동일하게 하면 여러개의 radio버튼 중  1개만 선택되게 할 수 있다.</p>
+    <p>input type="text" 태그의 경우는 짧은 한줄의 텍스트를 입력시킬 때 사용하며, textarea 태그는 장문의 텍스트를 입력시킬 때 사용한다</p>
+    <hr>
+    <h1>사용되는 속성</h1>
+    <ul>
+        <li>value - 입력박스에 들어가는 실제 정보</li>
+        <li>disabled - 선택한 입력박스 비활성화 / input 박스를 수정할 수 없게 하는 속성</li>
+        <li>required - 선택한 입력박스의 실제정보를 반드시 입력시킬 때 사용 / 정보를 필수로 입력해야하게 하는 속성 (이 입력란을 작성하세요)</li>
+        <li>selected - 셀렉박스에서 선택한 option태그가 선택된 상태로 보이게 할 때 사용</li>
+        <li>checked - 체크박스, 라디오 버튼이 체크된 상태로 표시할 때 사용</li>
+    </ul>
+    <form action="#" method="post">
+        <!--폼 속성은 보통 개발자가 넣음-->
+        <fieldset>
+            <legend>계정정보</legend>
+            <label for="user_id">아이디</label>
+            <input disabled value="뚱인데요" type="text" id="user_id" placeholder="아이디를 입력하시오">
+            <!-- placehorder= 입력박스 안에 텍스트 넣는 속성-->
+            <br>
+            <label for="user_pw">비밀번호</label>
+            <input type="password" id="user_pw" placeholder="8글자이상입력" required>
+            <br>
+            <label for="user_pw2">비밀번호 확인</label>
+            <input type="password" id="user_pw2" placeholder="비밀번호 다시 입력">
+            <!--id속성은 중복된 이름으로 쓸 수 없음-->
+        </fieldset>
+        <fieldset>
+            <legend>개인정보</legend>
+            <label for="">이름</label>
+            <input type="text" id="user_name">
+            <br>
+            <label for="user_birth">생년월일</label>
+            <input type="number" id="user_birth" maxlength="4" placeholder="년">
+             <!--type number는 숫자만 입력할 수 있게 하는 속성-->
+            <!--maxlength는 최대입력글자 정해주는 속성-->
+            <select name="" id="" selected="">
+                <option>월</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+            <input type="number" placeholder="일">
+            <br>
+            <label for="user_gender">성별</label>
+            <!--<select name="" id="">
+                <option>성별</option>
+                <option>남자</option>
+                <option>여자</option>
+                <option>선택안함</option>
+            </select>-->
+            <input type="radio" id="woman" name="gender" checked>
+            <label for="woman">여자</label>
+            <input va type="radio" id="man" name="gender">
+            <label for="man">남자</label>
+            <input type="radio" id="noselct" name="gender">
+            <label for="noselct">선택안함</label>
+            <!--라디오 박스가 하나만 체크되게 하고 싶다면 라디오 속성마다 같은 name속성을 넣어줘야 함!-->
+            <br>
+            <label>취미</label>
+            <input type="checkbox"id="like1">
+            <label for="like1">그림그리기</label>
+            <input type="checkbox"id="like2">
+            <label for="like2">소품만들기</label>
+            <!--input에 id랑 laber에 for 의 이름을 맞춰줘야 글자 클릭했을때도 체크가 됨-->
+            <br>
+            <label for="user_profile">자기소개</label>
+            <textarea id="user_profile">장문의 소개글</textarea>
+        </fieldset>
+        <input type="submit" value="회원가입">
+        <input type="reset" value="다시작성">
+
+    </form>
+    
+</body>
+</html>
