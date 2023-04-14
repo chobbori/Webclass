@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <link rel="stylesheet" href="./study1.css">
+    <style>
+        .textFrame{
+            width: 200px; height: 200px; border: 5px solid red;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>overflow</h1>
+    <p>overflow - 흘러넘친 컨텐츠에 대해서 대응하기위한 css 속성이다</p>
+    <ul>
+        <li>hidden - 흘러넘친 컨텐츠에 대해서 안보이게 처리</li>
+        <li>scroll - 흘러넘친 컨텐츠에 대해서 스크롤바를 표현</li>
+        <li>auto - 흘러넘친 컨텐츠에 대해서 스크롤바를 표현 (텍스트가 흘러 넘치면 스크롤 표시, 흘러넘치지 않으면 스크롤를 표시하지 않는다)</li>
+        <li>visible (기본값) - 흘러넘친 컨텐츠를 그대로 보여주도록 처리</li>
+    </ul>
+    <div class="textFrame">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis culpa consequatur cum facilis temporibus, in fuga quod non nulla natus nemo, iusto explicabo quibusdam? Libero fuga deserunt ex earum officia!
+    </div>
+</body>
+</html>
