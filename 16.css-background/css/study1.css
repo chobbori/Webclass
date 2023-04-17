@@ -1,0 +1,65 @@
+*{
+    margin: 0;padding: 0;
+}
+.box{
+    width: 800px;
+    height: 600px;
+    padding: 40px;
+    border: 1px solid red;
+    /*background-color:pink ;
+    background-image: url(./img/1.jpg);
+    background-repeat: no-repeat;
+    background-position:100px 100px*/
+    background: pink url("./img/1.jpg") no-repeat 100px 100px; 
+}
+.box2{
+    width: 1000px;
+    height: 800px;
+    border: 1px solid blue;
+    margin: 0 auto;
+    /*background: papayawhip url("./img/1.jpg") no-repeat right bottom;*/
+    background: papayawhip url("./img/1.jpg") no-repeat calc(100% - 50px);
+}
+/* center right left bottom top 으로 위치 정해줄 수 있음*/
+/* 50% 50%로 센터 지정 해줄 수 있음*/
+.box2>h2{
+    border: 1px solid salmon;
+    width: 50%;
+}
+.box3{
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+    margin: 0 auto;
+    background: url(./img/1.jpg) no-repeat 0 0;
+    background-size: ;
+}
+.box4{
+    border: 1px solid violet;
+    height: 100vh;
+    /*background-image: url(../16.css-background/img/1.jpg),url(../16.css-background/img/2.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 100% 100%;*/
+    background: url(../16.css-background/img/1.jpg) no-repeat 0 0, url(../16.css-background/img/2.jpg) no-repeat 100% 100% ;
+}
+.box5{
+    border: 10px solid skyblue;
+    width: 30vw;
+    height: 30vw;
+    margin: 0 auto;
+    /*background-image: linear-gradient(43deg, pink, yellow);*/
+    /*background-position: 100px 100px;*/
+    /*background-repeat: repeat;*/
+    /*background-size: 100px 100px;*/
+    background-image:radial-gradient(red, blue);
+}
+.box6{
+    width: 100%;
+    height: 500px;
+    border: 10px solid green;
+    margin: 0 auto;
+    background-color: brown;
+    background-image:linear-gradient(45deg,red,blue), url(../16.css-background/img/2.jpg);
+    background-blend-mode:exclusion ;
+    background-attachment: fixed; /*기본값은 scroll*/
+}

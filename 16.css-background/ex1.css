@@ -1,0 +1,43 @@
+/*css 작업 순서*/
+/*1. reset*/ 
+
+*{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: normal;}
+address,em,i{font-style: normal;}
+strong,b{font-weight: normal;}
+a{text-decoration: none; color: inherit;}
+
+/*2. common-style */
+body{
+    background: ivory;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+html{
+    font-size: 14px;
+    border: 3px solid red;
+    width: 900px;
+    margin: 0 auto;
+}
+body{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+        background-color: ivory;
+        display: inline-block 2px solid red;
+    }
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    
+    background-color: green;
+    padding: 20px 0 20px 0;
+    margin-bottom: 10px;
+}
+h3{
+    background-color: orange;
+    font-size: 30px;
+    font-weight: bold;
+}
