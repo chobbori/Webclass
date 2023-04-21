@@ -1,0 +1,57 @@
+*{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:normal;}
+address,em,i{font-style:normal;}
+strong,b{font-weight:normal;}
+a{text-decoration:none;color:inherit;}
+ul,ol{list-style: none;}
+hr{display:none;}
+
+html{
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 820px;
+    margin: 0 auto;
+}
+h1{
+    margin: 20px;
+}
+.bbstyle{
+    /* border:1px solid blue; */
+    border-bottom:3px solid blue;
+    padding-bottom:5px;
+    font-style: italic;
+    color: gray;
+    margin-bottom: 20px;
+}
+header{
+    /* border:1px solid red; */
+}
+
+h2 b{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.check{
+    width: 820px;
+    border: 1px solid gray;
+    background: rgb(219, 219, 219);
+    padding: 8px;
+    margin: 10px 0 10px 0;
+}
+
+
+.Asia{
+    float: left;
+}
+.Asia:after{content: ""; display: block; clear: both;}
+
+.Asia h3{
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+.Australia{
+
+}
+
+
