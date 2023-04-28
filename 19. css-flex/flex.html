@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{margin:0;padding:0;}
+        .box{
+            border:1px solid red;
+            display:flex;
+            /* justify-content: space-between; */
+            /* align-items: center; */
+            flex-wrap: wrap;
+        }
+        .box section{
+            border: 1px solid blue;
+            width:calc((100% - 40px)/3);
+            box-sizing: border-box;
+            margin-right:20px;
+        }
+        .box section:nth-of-type(3n){margin-right:0;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <section>1</section>
+        <section>2</section>
+        <section>
+            <h2>title3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error molestias id facilis similique sit enim aliquid ad ipsum reiciendis distinctio! Quas provident quaerat, possimus labore omnis sapiente dignissimos eaque illo.</p>
+        </section>
+        <section>4</section>
+        <section>5</section>
+    </div>
+</body>
+</html>
