@@ -1,0 +1,51 @@
+*{margin: 0; padding: 0;}
+body{margin-bottom:500px ;}
+
+.boxa{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+@keyframes hyeRotate{
+    0%{transform: rotate(0deg);}
+    50%{background: pink;border-radius: 50%;}
+    100%{transform: rotate(360deg);}
+}
+.boxa{
+    /* animation-name: hyeRotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    animation: hyeRotate 5s linear 0s infinite normal;
+}
+.boxb{
+    width: 400px;
+    height: 400px;
+    background: skyblue;
+    transition: all 0.5s ease 0s;
+}
+.boxb:hover{
+    animation-play-state: paused;
+    background: salmon;
+    border-radius: 50%;
+}
+@keyframes hye{
+    0%{transform: translate(0%,0%);}
+    25%{transform: translate(100%,0%)}
+    50%{transform: translate(100%,100%);}
+    75%{transform: translate(0%,100%);}
+    100%{transform: translate(0%,0%);}
+} 
+.boxb{
+    animation: hye 4s linear 0s infinite normal;
+}
+.spantag{
+    transition: all 0.5s ease 0s;
+    position: fixed;
+    width: 200px; height: 200px;
+    right: 0; top:0;
+}
+.spantag:hover{transform: rotate(90deg);}
