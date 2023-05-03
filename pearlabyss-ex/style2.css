@@ -19,7 +19,7 @@ header{
     width: 100%;
     height: 70px;
     color: #fff;
-    /* z-index: 1000; */
+    z-index: 1000;
     transition: all 0.5s ease 0s;
     overflow: hidden;
 }
@@ -138,7 +138,7 @@ header:hover .logoArea a{
 
 
 main{
-    border: 10px solid blue;
+    /* border: 10px solid blue; */
     position: relative;
 }
 .videoBanner{
@@ -164,12 +164,13 @@ main{
     position: absolute;
     left: 50%;
     top: 50%;
-    /* transform: translateX(-50%)translateY(-50%); */
+    transform: translateX(-50%)translateY(-50%);
     z-index: 10;
     text-align: center;
 }
 .flotingTxt>h2{
     margin-bottom: 50px;
+    
 }
 .flotingTxt>a{
     border: 1px solid lime;
@@ -179,10 +180,132 @@ main{
     color: #fff;
     font-size:1.3rem ;
     border-radius: 4px;
+}
+
+
+.news{
+    border: 1px solid red;
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.news>h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.news>ul{
+    display: flex;
+    justify-content: space-between;
     
 }
+.news>ul>li{
+    /* border: 1px solid red; */
+    border-right: 1px solid #ddd;
+    flex: 1;
+    padding: 0 20px;
+}
+.news>ul>li:first-of-type{padding-left: 0;}
+.news>ul>li:last-of-type{padding-right:0}
 
-footer{
-    border: 10px solid green;
+.news>ul>li>a>h4{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.news>ul>li>a>.date{
+    font-size: 12px;
+    color: rgb(124, 124, 124);
+    margin-bottom: 20px;
 }
 
+
+.culture{
+    border: 1px solid pink;
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.culture>ul{
+    display: flex;
+    
+}
+.culture>ul>li{
+    position: relative;
+}
+.culture>ul>li>a>.floatingBox{
+    border: 1px solid lime;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%)translateY(-50%);
+    z-index: 0;
+    text-align: center;
+    color: #fff;
+}
+.culture>ul>li>a>.floatingBox>h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+/* .culture>ul>li>a>p{
+    position: relative;
+} */
+
+.notice{
+    /* border: 1px solid orange; */
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    border-bottom: 1px solid #ddd;
+}
+.notice>ul{
+    display: flex;
+    margin-top: 150px;
+}
+.notice>ul>li{
+    border: 1px solid orange;
+    flex: 1;
+    margin-right: 15px;
+}
+.notice>ul>li:last-of-type{margin-right: 0;}
+.notice>ul>li>a>img{
+    width: 345px;
+    height: 190px;  
+    margin-bottom: 12px; 
+    
+    transition: all 0.5s ease 0s;
+}
+.notice>ul>li>a>img:hover{
+    width: 110%;
+    height: 110%;
+}
+.notice>ul>li>a>h4{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+
+footer{
+    /* border: 10px solid green; */
+    width: 1440px;
+    margin: 0 auto;
+}
+.footmenu1{
+    border: 1px solid red;
+}
+.footmenu1>ul{
+    display: flex;
+    justify-content: space-around;
+}
+.footmenu1>ul>li{
+    border: 1px solid red;
+}
+.footmenu2{
+    border: 1px solid red;
+}
+.footmenu2>ul{
+    display: flex;
+}
