@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적표 예제</title>
+</head>
+<body>
+    <p>퀴즈) 사용자에게 국어,영어,수학 물어보고 평균점수 알림창에 나타내기</p>
+    <script>
+        
+        let name = prompt("당신의 이름을 입력해주세요")
+
+        let KOR = Number(prompt("국어점수 입력해주세용"))
+        let ENG = Number(prompt("영어점수 입력해주세용"))
+        let MATH = Number(prompt("수학점수 입력해주세용"))
+
+        let average = (KOR + ENG + Math)/3
+
+        document.write("<h1>안녕하세요!"+name+"님 의 평균점수는"+average+"입니다</h1>")
+
+
+    </script>
+</body>
+</html>
