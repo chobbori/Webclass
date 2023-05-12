@@ -24,9 +24,19 @@
     <p>무언가가 있다면 true / 없다면 false</p>
     <ul>
         <li>숫자데이터인데 0인 경우</li>
+        <li>문자데이터인데 빈문자인 경우</li>
+        <li>변수메모리는 있는데 초기화를 하지 않은 경우의 변수</li>
     </ul>
     <script>
-        0
+        let age = prompt("나이 입력")
+        alert(age? &{age}살 이시군요:나이 입력 해주3요)
+
+        
+        // 0 false로 간주
+        // 1 ture로 간주
+        // "" false로 간주
+        // "test" ture로 간주
+        // 
     </script>
 </body>
 </html>
