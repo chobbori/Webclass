@@ -1,9 +1,5 @@
-es (19 sloc)  448 Bytes
- 
 
-table{
-    border-collapse: collapse;
-}
+table{border-collapse: collapse;}
 .gradeStyle{
     width:500px;
     margin:0 auto;
