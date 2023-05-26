@@ -8,14 +8,23 @@
 </head>
 <body>
     <h1>문서객체의 클래스 조작하기</h1>
+    <h2>문서객체.classlist.add("클래스명")</h2>
+    <p>선택한 문서객체(태그)에 입력한 클래스명을 추가할 때 사용하는 매서드(함수)</p>
+    <h2>문서객체.classlist.remove("클래스명")</h2>
+    <p>선택한 문서객체(태그)에 입력한 클래스명을 삭제할 때 사용하는 매서드(함수)</p>
+
     <p class="p1">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident error esse earum, molestiae quis eveniet similique, pariatur quidem officiis ipsum neque illum dolores ratione saepe id placeat animi! Reprehenderit, quae.
     </p>
     <script>
-        let p1 = document.querySelector(".p1")
-        p1.style.border="1px solid red"
-        p1.classList.add("on")
-        p1.classList.remove("on")
+        window.onload = function(){
+           let p1 = document.querySelector(".p1")
+            p1.style.border="1px solid red"
+            p1.classList.add("on")
+            p1.classList.remove("on") 
+        }
+        
+
     </script>
 </body>
 </html>
