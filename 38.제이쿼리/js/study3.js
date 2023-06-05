@@ -3,7 +3,8 @@ $(document).ready(function(){
     //1.btn1 을 클릭하면
     //2. textFrame클래스 태그가 선택돼서 글씨가 파란색이 되도록
 
-    $(".btn1").click(function(){
+    $(".btn1").click(function(e){
+        e.preventDefault()//선택한 
         //버튼1 클릭했을 때 실행되는 소스코드
         $(".textFrame").css("color","blue")
     })
