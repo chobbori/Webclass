@@ -1,0 +1,33 @@
+*{margin:0;padding:0;}
+.wrap{
+    border:1px solid blue;
+    /* width:600px; */
+    /* text-align: center; */
+}
+.a{
+    border:1px solid red;
+    display: inline-block;
+    width:200px;
+    vertical-align: middle;
+}
+
+.box{
+    border:1px solid blue;
+    position:absolute;
+    /* 나를 포함하는 상위태그(부모,할머니,증조할머니...) 중에서 position이 설정된 태그의 영역을 기준으로 */
+    width:300px;
+    height:300px;
+    right:0;
+    bottom:0;
+    background:lightgreen;
+}
+.outter{
+    background:lightsalmon;
+    width:600px;
+    height:600px;
+    margin:0 auto;
+    position:relative;
+}
+section{
+    background:lightcoral;
+}
