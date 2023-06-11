@@ -133,22 +133,74 @@ header{
     height: 940px;
     background: #faf5f1;
     margin-top: 141px;
+    position: relative;
 }
 .mainBanner>h1{
     border: 1px solid black;
     width: 795px;
+    position: absolute;
+    left: 217px;
+    top: 259px;
 }
 .mainBanner>h1>img{
     width: 100%;
     object-fit: contain;
 }
-.mainBanner .a{
-    border: 1px solid black;
-    height: 252px;
+.mainBanner_Right{
+    border: 1px solid red;
+    width: 830px;
+    height: 836px;
+    position: absolute;
+    top: 43px;
+    left: 1000px;
+    display: flex;
 }
-.mainBanner .b{
-    width: 413px;
+.mainBanner_Right >.a{
+    height: 525px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+.mainBanner_Right >.b{
+    width: 390px;
+    height: 346px;
+    position: absolute;
+    bottom: 0;
+}
+.mainBanner_Right >.c {
+    width: 545px;
+    height: 488px;
+    position: absolute;
+    top: 0px;
+    left: 377px;
+}
+.mainBanner_Right >.d{
+    width: 40px;
+    height: 40px;
+}
+
+.mainBanner > .orderBtn{
+    background: #E01428;
+    border-radius: 50px;
+    width: 440px;
+    height: 100px;
+    position: absolute;
+    top: 766px;
+    left: 750px;
+}
+.mainBanner > .orderBtn >h3{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    
+}
+
+
 
 .mainMenu{
     border: 1px solid black;
@@ -239,11 +291,22 @@ header{
     width: 1200px;
     margin: 0 auto;
 }
-
 .freeShippingn>h2{
     border: 1px solid red;
     font-size: 3rem;
 }
+.weekFree{
+    border: 1px solid lime;
+    display: flex;
+}
+.weekFree li{
+    flex: 1;
+}
+.weekFree img{
+    width: 380px;
+    height: 380px;
+}
+
 .wTxtBox{
     border:1px solid blue;
     position:relative;
