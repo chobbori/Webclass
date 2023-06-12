@@ -6,11 +6,24 @@ em,i,address{font-style: normal;}
 strong,b{font-weight: 400;}
 
 /* common */
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 .contentFrame{
     width:1200px;
     margin:0 auto;
 }
+body{
+    font-family: 'TheJamsil';
+    font-weight: 500;
+}
 
+
+/* header */
 header{
     border: 1px solid red;
     background: #fff;
@@ -125,7 +138,7 @@ header{
 
 
 
-
+/* main */
 
 .mainBanner{
     border: 1px solid red;
@@ -141,6 +154,7 @@ header{
     position: absolute;
     left: 217px;
     top: 259px;
+    z-index: 200;
 }
 .mainBanner>h1>img{
     width: 100%;
@@ -152,31 +166,57 @@ header{
     height: 836px;
     position: absolute;
     top: 43px;
-    left: 1000px;
+    left: 1090px;
     display: flex;
 }
-.mainBanner_Right >.a{
+.mainBanner_Right >.salad {
     height: 525px;
     position: absolute;
-    top: 0;
+    top: 22px;
     left: 0;
+    z-index: 100;
 }
-.mainBanner_Right >.b{
-    width: 390px;
+.mainBanner_Right >.pasta {
+    width: 414px;
     height: 346px;
     position: absolute;
     bottom: 0;
+    left: 267px;
 }
-.mainBanner_Right >.c {
+.mainBanner_Right >.toast {
     width: 545px;
     height: 488px;
     position: absolute;
     top: 0px;
     left: 377px;
 }
-.mainBanner_Right >.d{
+.mainBanner_Right > .glitter2 {
     width: 40px;
     height: 40px;
+    position: absolute;
+    top: 88px;
+    left: -22px
+}
+.mainBanner_left >.glitter1{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top:290px ;
+    left: 90px;
+}
+.mainBanner_left>.deco{
+    border: 1px solid black;
+    height: 720px;
+    width: 860px;
+    position: absolute;
+    top: 58px;
+}
+.mainBanner_left>.tomato{
+    width: 232px;
+    height: 232px;
+    position: absolute;
+    top: 526px;
+    right: 1724px;
 }
 
 .mainBanner > .orderBtn{
@@ -192,6 +232,7 @@ header{
     width: 100%;
     height: 100%;
     border: 1px solid #fff;
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -202,14 +243,16 @@ header{
 
 
 
-.mainMenu{
+.mainMenu {
     border: 1px solid black;
     width: 1200px;
     margin: 0 auto;
     margin-top: 120px;
+    margin-bottom: 120px;
 }
 .mainMenu>section{
     border: 1px solid blue;
+    font-family: 'Bebas Neue', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -230,19 +273,26 @@ header{
 }
 .mainMenu>ul>li{
     flex: 1;
+    justify-content: space-between;
 }
 .mainMenu>ul li img{
     border: 1px solid red;
     width: 134px;
-    
+}
+.mainMenu>ul li p{
+    border: 1px solid blue;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
 }
 
 
 
-.banner2{
-    background: #e01428;
+.banner2 {
+    background: rgb(224, 20, 40);
     width: 100%;
-    height: 485px;
+    height: 451px;
+    position: ;
 }
 .banner2 .contentFrame{
     display:flex;
@@ -254,29 +304,45 @@ header{
 .banner2 .contentFrame img{
     width:316px;
 }
-.banner2title{
-    font-size:70px;
-    border:1px solid gold;
+.banner2title {
+    width: 750px;
+    height: 620px;
+    font-size: 70px;
+    border: 1px solid gold;
     position: relative;
+    line-height: 200%;
+    margin-top: 23px;
 }
 .banner2title b{
     display:block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 170px;
+    color: #fff;
+}
+.banner2title .banner2title-red{
+    color: #E01428;
 }
 .banner2title i{
     border:1px solid orange;
+    font-size: 2rem;
     position:absolute;
+    color: #fff;
 }
-.banner2title i:nth-of-type(1){
-    left:10px;
-    top:10px;
+.banner2title i:nth-of-type(1) {
+    left: 335px;
+    top: 36px;
 }
-.banner2title i:nth-of-type(2){
-    left:20px;
-    top:20px;
+.banner2title i:nth-of-type(2) {
+    left: 424px;
+    top: 175px;
 }
-.banner2title i:nth-of-type(3){
-    left:30px;
-    top:30px;
+.banner2title i:nth-of-type(3) {
+    left: 544px;
+    top: 317px;
+}
+.banner2 .cat1{
+    height: 270px;
+    align-items: flex-end;
 }
 
 
@@ -285,15 +351,20 @@ header{
 
 
 
-.freeShipping{
+.freeShipping {
     border: 1px solid red;
     height: 714px;
     width: 1200px;
     margin: 0 auto;
+    margin-top: 220px;
 }
-.freeShippingn>h2{
-    border: 1px solid red;
-    font-size: 3rem;
+.freeShipping>h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.freeShipping>h2>b{
+    color: #E01428;
 }
 .weekFree{
     border: 1px solid lime;
@@ -303,13 +374,19 @@ header{
     flex: 1;
 }
 .weekFree img{
-    width: 380px;
-    height: 380px;
+    width: 360px;
+    height: 360px;
+    border-radius: 20px;
 }
 
 .wTxtBox{
     border:1px solid blue;
+    margin-top: 10px;
     position:relative;
+    background: #fff;
+    width: 360px;
+    height: 156px;
+    border-radius: 20px;
 }
 .starStyle{
     border:1px solid red;
@@ -320,4 +397,54 @@ header{
     background-size:16px auto;
     padding-left:20px;
     border-radius:10px;
+}
+
+
+
+
+.banner3{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.banner3> img{
+    width: 100%;
+    height: 100%;
+}
+.banner3 .banner3Txt{
+    border: 1px solid black;
+    z-index: 100;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 234px);
+}
+.banner3 .banner3Txt >h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.banner3 .banner3Txt >p{
+    font-size: 2rem;
+    font-weight: 300;
+    position: relative;
+}
+.banner3-1{
+    border: 1px solid lime;
+    background: #fff;
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 600px);
+    border-radius: 50px;
+}
+.banner3-1 >img{
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    top: calc(50% - 190px);
+    left: 90px;
+    border-radius: 40px;
 }
