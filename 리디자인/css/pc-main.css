@@ -4,6 +4,7 @@ ul,ol{list-style: none;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight:400;}
 em,i,address{font-style: normal;}
 strong,b{font-weight: 400;}
+img{max-width:100%;}
 
 /* common */
 @font-face {
@@ -271,19 +272,21 @@ header{
     margin:0 auto;
     margin-bottom: 110px;
 }
-.mainMenu>ul>li{
-    flex: 1;
+.mainMenu > ul > li {
+    flex: 1 1 0%;
+    text-align: center;
     justify-content: space-between;
 }
 .mainMenu>ul li img{
     border: 1px solid red;
     width: 134px;
 }
-.mainMenu>ul li p{
+.mainMenu > ul li p {
     border: 1px solid blue;
     font-size: 24px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -294,9 +297,11 @@ header{
     height: 451px;
     position: ;
 }
-.banner2 .contentFrame{
-    display:flex;
+.banner2 .contentFrame {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* border: 7px solid orange; */
 }
 .banner2 .contentFrame section{
     width:750px;
@@ -360,7 +365,7 @@ header{
 }
 .freeShipping>h2{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 30px;
 }
 .freeShipping>h2>b{
@@ -378,27 +383,42 @@ header{
     height: 360px;
     border-radius: 20px;
 }
-
-.wTxtBox{
-    border:1px solid blue;
+.weekFree .wTxtBox {
+    border: 1px solid blue;
     margin-top: 10px;
-    position:relative;
+    position: relative;
     background: #fff;
     width: 360px;
-    height: 156px;
+    height: 145px;
     border-radius: 20px;
 }
-.starStyle{
-    border:1px solid red;
-    position:absolute;
-    right:0;
-    top:0;
-    background:url("../img/star.svg") no-repeat 0 50%;
-    background-size:16px auto;
-    padding-left:20px;
-    border-radius:10px;
+.weekFree .wTxtBox h4 {
+    position: absolute;
+    font-size: 28px;
+    top: 25px;
+    left: 25px;
 }
 
+.starStyle {
+    border: 3px solid red;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    background: url(../img/star.svg) no-repeat 0 50%;
+    background-size: 16px auto;
+    border-radius: 20px;
+    padding: 3px 20px 3px 31px;
+}
+.weekFree .wTxtBox p {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 300;
+    top: 100px;
+    left: 25px;
+}
+.weekFree .wTxtBox p b{
+    color: #E01428;
+}
 
 
 
@@ -425,10 +445,13 @@ header{
     text-align: center;
     margin-bottom: 15px;
 }
-.banner3 .banner3Txt >p{
+.banner3 .banner3Txt >h2{
     font-size: 2rem;
     font-weight: 300;
-    position: relative;
+    
+}
+.banner3 .banner3Txt >p{
+
 }
 .banner3-1{
     border: 1px solid lime;
@@ -447,4 +470,86 @@ header{
     top: calc(50% - 190px);
     left: 90px;
     border-radius: 40px;
+}
+.banner3-1Txt {
+    position: absolute;
+    top: calc(50% - 142px);
+    left: 560px;
+}
+.banner3-1Txt h2{
+    font-weight: 500;
+    font-size: 49px;
+    padding-bottom: 30px;
+}
+.banner3-1Txt section{
+    /* border: 1px solid #000; */
+    width: 516px;
+    height: 60px;
+    background: #000;
+    border-radius: 30px;
+    margin-bottom:30px ;
+}
+.banner3-1Txt h3{
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.banner3-1Txt .price{
+    display: flex;
+}
+.banner3-1Txt .price .a{
+    font-size: 38px;
+}
+.banner3-1Txt .price .b{
+    font-size: 30px;
+    font-weight: 200;
+    
+}
+.banner3-1 .price .c{
+    color: #E01428;
+    font-size: 38px;
+}
+
+
+.discount{
+    border: 1px solid red;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.discount h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.discount h2>b{
+    color: #E01428;
+}
+.discount ul{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.discount > ul li {
+    border: 1px solid lime;
+    background: rgb(255, 240, 240);
+    width: 360px;
+    height: 650px;
+    border-radius: 200px;
+}
+.discount >ul h2{
+    display: inline-block;
+    font-size: 45px;
+    background: #E01428;
+    border-radius: 50px;
+    
+}
+.discount >ul li h3{
+    font-size: 30px;
+}
+.discount>ul li figure{
+    width: 280px;
+    height: 280px;
+}
+.discount >ul li .TxtBox{
+    border: 1px solid blue;
 }
