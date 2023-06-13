@@ -510,11 +510,12 @@ header{
 }
 
 
-.discount{
+.discount {
     border: 1px solid red;
     width: 1200px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
 .discount h2{
     font-family: 'Bebas Neue', sans-serif;
@@ -552,4 +553,130 @@ header{
 }
 .discount >ul li .TxtBox{
     border: 1px solid blue;
+}
+
+
+
+.banner4{
+    width: 100%;
+    height: 250px;
+    background: #E01428;
+    
+}
+.banner4 section{
+    border: 1px solid lime;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+.banner4 img {
+    width: 312px;
+    height: 180px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+.banner4 section> h2{
+    color: #fff;
+    font-size: 42px;
+    justify-content: center;
+}
+
+
+
+.popular {
+    border: 1px solid red;
+    height: 714px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 220px;
+}
+.popular>section{
+    border: 1px solid blue;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+.popular>section>h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.popular>section>h2>img{
+    width: 30px;
+    height: 44px;
+}
+.popular>section>h3{
+    font-size: 2rem;
+}
+.nearbyStore{
+    border: 1px solid lime;
+    display: flex;
+}
+.nearbyStore li{
+    flex: 1;
+}
+.nearbyStore img{
+    width: 360px;
+    height: 360px;
+    border-radius: 20px;
+}
+.nearbyStore .TxtBox {
+    border: 1px solid blue;
+    margin-top: 10px;
+    position: relative;
+    background: #fff;
+    width: 360px;
+    height: 145px;
+    border-radius: 20px;
+}
+.nearbyStore .TxtBox h4 {
+    position: absolute;
+    font-size: 28px;
+    top: 25px;
+    left: 25px;
+}
+
+.starStyle {
+    border: 3px solid red;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    background: url(../img/star.svg) no-repeat 0 50%;
+    background-size: 16px auto;
+    border-radius: 20px;
+    padding: 3px 20px 3px 31px;
+}
+.nearbyStore .TxtBox p {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 300;
+    top: 100px;
+    left: 25px;
+}
+.nearbyStore .TxtBox p b{
+    color: #E01428;
+}
+
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 490px;
+    background: #FAFs5F1;
+}
+.footerMenu{
+    width: 100%;
+    height: 90px;
+    background: #F9EAE1;
+    display: flex;
+}
+.footerMenu>ul{
+    display: flex;
+
 }
