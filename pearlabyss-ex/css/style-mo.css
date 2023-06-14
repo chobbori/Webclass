@@ -340,6 +340,8 @@
         font-weight: bold;
     }
 
+
+
     footer{margin-top:200px;}
     .footMenu1{
         border-top:1px solid #ebebeb;
@@ -367,6 +369,7 @@
         font-size: 1rem;
     }
     .footMenu1>ul>li>ul>li{
+        
         margin-bottom:14px;
     }
     .footMenu1>ul>li>ul>li:hover{
