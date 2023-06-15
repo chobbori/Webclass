@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0}
+ul,ol{list-style: none}
+
+
+.intro{
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+    margin-left: 100px;
+}
+.intro video source{
+    width: 100%;
+    height: 100%;
+}
