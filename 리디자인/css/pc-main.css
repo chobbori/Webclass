@@ -41,6 +41,7 @@ body{
     border:1px solid #E01428;
     width: 320px;
     height: 970px;
+    display: flex;
 }
 .gnb>ul li a{
     text-align: center;
@@ -48,6 +49,7 @@ body{
     justify-content: center;
     margin: 0 auto;
     position: relative;
+    
 }
 .gnb>ul li a img{
     /* border: 1px solid black; */
