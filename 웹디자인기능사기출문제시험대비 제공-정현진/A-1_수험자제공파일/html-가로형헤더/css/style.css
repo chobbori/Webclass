@@ -201,7 +201,7 @@ footer{
     display:none;
 }
 .popup.on{
-    display:block;;
+    display:block;
 }
 .popup>h2{
     font-weight:bold;
