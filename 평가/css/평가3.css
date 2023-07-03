@@ -1,0 +1,31 @@
+*{margin:0;padding:0;}
+ul,ol{list-style: none;}
+img{max-width: 100%;}
+
+.station{
+    width:800px;
+    height:700px;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+.train{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.controler {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-95px);
+    display: flex;
+    width: 750px;
+    justify-content: space-between;
+}
+.controler>a{
+    padding:10px;
+    background:pink;
+}

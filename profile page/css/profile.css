@@ -1,0 +1,67 @@
+*{margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+ul,ol{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight:400;}
+em,i,address{font-style: normal;}
+strong,b{font-weight: 400;}
+img{max-width:100%;}
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.topBar{
+    border: 1px solid black;
+    background: #bfdff7;
+    width: 100%;
+    height: 54px;
+    display: flex;
+}
+.topLogo{
+    display: flex;
+
+}
+.topLogo>h1{
+    font-family: 'yg-jalnan', sans-serif;
+}
+.topLogo>h1 img{
+    width: 50px;
+}
+.gnb{
+    border: 1px solid red;
+    width: 190px;
+}
+.gnb>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.gnb>ul li{
+    
+}
+.topBarRight{
+    border: 1px solid blue;
+}
+.topBarRight>ul{
+    display: flex;
+}
+.main{
+    background: #f2dfe6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.icon{
+    border: 1px solid red;
+}
+.icon img{
+    width: 126px;
+}
+.underBar>ul{
+    display: flex;
+}
+.underBar>ul>li img{
+    height: 76px;
+}
