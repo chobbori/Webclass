@@ -6,43 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyein's Portfolio</title>
     <link rel="stylesheet" href="./css/profile.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="./js/profile.js"></script>
+    <link href="https://webfontworld.github.io/TheJamsil/TheJamsil.css" rel="stylesheet">
 </head>
 <body>
+    <div class="popupFrame">
+        <!-- 기본 팝업창 -->
+        <!-- <section class="popupBasicStyle">
+            <div class="popupStateLine">
+                <div class="popupBtn">
+                    <section class="popupBtnClose">
+                        <span></span>
+                        <span></span>
+                    </section>
+                    <section class="popupBtnYellow"></section>
+                    <section class="popupBtnGreen"></section>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- 웰컴창 -->
+        <section class="popupBasicStyle welcome">
+            <div class="popupStateLine">
+                <div class="popupBtn">
+                    <section class="popupBtnClose">
+                        <span></span>
+                        <span></span>
+                    </section>
+                    <section class="popupBtnYellow"></section>
+                    <section class="popupBtnGreen"></section>
+                </div>
+            </div>
+            <div class="popupContents">
+                <h1 class="welcomeTxt"></h1>
+                <img class="welcomeDeco" src="./img/PopupWelcom.svg" alt="">
+            </div>
+        </section>
+
+        <!-- 어바웃미 -->
+        <section class="popupBasicStyle popupAboutMe">
+            <div class="popupStateLine">
+                <div class="popupBtn">
+                    <section class="popupBtnClose">
+                        <span></span>
+                        <span></span>
+                    </section>
+                    <section class="popupBtnYellow"></section>
+                    <section class="popupBtnGreen"></section>
+                </div>
+            </div>
+            <div class="popupContents popupAboutMe">
+                <div class="tabMenu">
+                    <ul class="tabTit">
+                        <li class="on"><p>profile</p></li>
+                        <li><p>Education&career</p></li>
+                        <li><p>favorite things</p></li>
+                    </ul>
+                    <div class="tabDes">
+                        <div class="iamHyein">
+                            <h2>I AM</h2>
+                            <img src="./img/iamHyein.svg" alt="">
+                            <h2>CHO HYEIN</h2>
+                        </div>
+                        <ul class="hyeinIntroduce">
+                            <li>Birth<span>1997.07.14</span></li>
+                            <li>Birth<span>1997.07.14</span></li>
+                            <li>Birth<span>1997.07.14</span></li>
+                            <li>Birth<span>1997.07.14</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
     <div class="topBar">
-        <section class="topLogo">
-            <h1><img src="./img/topbar logo.svg" alt="logo"></h1>
-            <h1>Hyein's Portfolio</h1>
-        </section>
-        <section class="gnb">
-            <ul>
-                <li>File</li>
-                <li>contact</li>
-                <li>Setting</li>
-            </ul>
-        </section>
+        <div class="topBarLeft">
+            <section class="topLogo">
+                <h1><img src="./img/topbar logo.svg" alt="logo"></h1>
+                <h1>Hyein's Portfolio</h1>
+            </section>
+            <section class="gnb">
+                <ul>
+                    <li><p>File</p></li>
+                    <li><p>contact</p></li>
+                    <li><p>Setting</p></li>
+                </ul>
+            </section>
+        </div>
+        
         <section class="topBarRight">
             <ul>
-                <li><img src="./img/wifi.svg" alt="와이파이"></li>
-                <li><img src="./img/battery.svg" alt="배터리"></li>
-                <li><p>07/03(mon) 7:51</p></li>
+                <li class="wifi"><img src="./img/wifi.svg" alt="와이파이"></li>
+                <li class="battery"><img src="./img/battery.svg" alt="배터리"></li>
+                <li><p id="date">07/03(mon) 7:51</p></li>
             </ul>
         </section>
     </div>
     <div class="main">
         <div class="icon">
-            <img src="./img/AboutMe.svg" alt="">
-            <img src="./img/Project.svg" alt="">
+            <ul class="hoverStyleSet">
+                <li class="aboutMe">
+                    <img src="./img/AboutMe.svg" alt="">
+                    <p>About me</p>
+                </li>
+                <li>
+                    <img src="./img/Project.svg" alt="">
+                    <p>Project</p>
+                </li>
+            </ul>
         </div>
         <div class="underBar">
-            <ul>
-                <li><img src="./img/ContactMe.svg" alt=""></li>
+            <ul class="hoverStyleSet">
+                <li class="contact"><img src="./img/ContactMe.svg" alt=""></li>
                 <li><img src="./img/Popup.svg" alt=""></li>
-                <li><img src="./img/Video.svg" alt=""></li>
+                <li class="video"><img src="./img/Video.svg" alt=""></li>
                 <li><img src="./img/Redesign.svg" alt=""></li>
                 <li><img src="./img/MySkill.svg" alt=""></li>
                 <li><img src="./img/Setting.svg" alt=""></li>
             </ul>
         </div>
+        <div class="underBarW"></div>
     </div>
 </body>
 </html>
