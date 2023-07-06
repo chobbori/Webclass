@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="./js/profile.js"></script>
     <link href="https://webfontworld.github.io/TheJamsil/TheJamsil.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="popupFrame">
         <!-- 기본 팝업창 -->
@@ -27,7 +29,7 @@
         </section> -->
 
         <!-- 웰컴창 -->
-        <section class="popupBasicStyle welcome">
+        <!-- <section class="popupBasicStyle welcome">
             <div class="popupStateLine">
                 <div class="popupBtn">
                     <section class="popupBtnClose">
@@ -42,7 +44,7 @@
                 <h1 class="welcomeTxt"></h1>
                 <img class="welcomeDeco" src="./img/PopupWelcom.svg" alt="">
             </div>
-        </section>
+        </section> -->
 
         <!-- 어바웃미 -->
         <section class="popupBasicStyle popupAboutMe">
@@ -59,9 +61,15 @@
             <div class="popupContents popupAboutMe">
                 <div class="tabMenu">
                     <ul class="tabTit">
-                        <li class="on"><p>profile</p></li>
-                        <li><p>Education&career</p></li>
-                        <li><p>favorite things</p></li>
+                        <li class="on">
+                            <p>profile</p>
+                        </li>
+                        <li>
+                            <p>Education&career</p>
+                        </li>
+                        <li>
+                            <p>favorite things</p>
+                        </li>
                     </ul>
                     <div class="tabDes">
                         <div class="iamHyein">
@@ -81,7 +89,31 @@
             </div>
         </section>
 
+        <!-- 팝업 -->
+        <section class="popupBasicStyle popupPopup">
+            <div class="popupStateLine">
+                <div class="popupBtn">
+                    <section class="popupBtnClose">
+                        <span></span>
+                        <span></span>
+                    </section>
+                    <section class="popupBtnYellow"></section>
+                    <section class="popupBtnGreen"></section>
+                </div>
+            </div>
+            <div class="popupContents">
+                <img class="popupBackground" src="./img/popupBackground.svg" alt="">
+            </div>
+        </section>
+
     </div>
+
+
+
+
+
+
+
 
     <div class="topBar">
         <div class="topBarLeft">
@@ -91,18 +123,26 @@
             </section>
             <section class="gnb">
                 <ul>
-                    <li><p>File</p></li>
-                    <li><p>contact</p></li>
-                    <li><p>Setting</p></li>
+                    <li>
+                        <p>File</p>
+                    </li>
+                    <li>
+                        <p>contact</p>
+                    </li>
+                    <li>
+                        <p>Setting</p>
+                    </li>
                 </ul>
             </section>
         </div>
-        
+
         <section class="topBarRight">
             <ul>
                 <li class="wifi"><img src="./img/wifi.svg" alt="와이파이"></li>
                 <li class="battery"><img src="./img/battery.svg" alt="배터리"></li>
-                <li><p id="date">07/03(mon) 7:51</p></li>
+                <li>
+                    <p id="date">07/03(mon) 7:51</p>
+                </li>
             </ul>
         </section>
     </div>
@@ -121,7 +161,7 @@
         </div>
         <div class="underBar">
             <ul class="hoverStyleSet">
-                <li class="contact"><img src="./img/ContactMe.svg" alt=""></li>
+                <li class="contact"><a href="mailto:"><img src="./img/ContactMe.svg" alt=""></a></li>
                 <li><img src="./img/Popup.svg" alt=""></li>
                 <li class="video"><img src="./img/Video.svg" alt=""></li>
                 <li><img src="./img/Redesign.svg" alt=""></li>
@@ -130,35 +170,36 @@
             </ul>
             <div class="ballon">
                 <ul>
-                    <li>
+                    <li class="ballonContact">
                         <img src="./img/ballon.svg" alt="말풍선">
                         <h3>Contact me!</h3>
                     </li>
-                    <li>
+                    <li class="ballonPopup">
                         <img src="./img/ballon.svg" alt="말풍선">
                         <h3>Popup</h3>
                     </li>
-                    <li>
+                    <li class="ballonVideo">
                         <img src="./img/ballon.svg" alt="말풍선">
                         <h3>Video</h3>
                     </li>
-                    <li>
+                    <li class="ballonRedesign">
                         <img src="./img/ballon.svg" alt="말풍선">
                         <h3>Redesign</h3>
                     </li>
-                    <li>
+                    <li class="ballonSkill">
                         <img src="./img/ballon.svg" alt="말풍선">
                         <h3>My skill</h3>
                     </li>
-                    <li>
+                    <li class="ballonSetting">
                         <img src="./img/ballon.svg" alt="말풍선">
                         <h3>Setting</h3>
                     </li>
                 </ul>
-                
+
             </div>
         </div>
         <div class="underBarW"></div>
     </div>
 </body>
+
 </html>
