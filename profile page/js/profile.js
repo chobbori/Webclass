@@ -132,10 +132,57 @@ $(".popupBtnClose").click(function(){
   }
   
   window.onload = () => {
-    const $target = document.querySelector(".popupBasicStyle");
+    const $target1 = document.querySelector(".welcome");
+    draggable($target1)
     
-    draggable($target);
   }
+
+
+// 어바웃미 탭메뉴
+let tabTitles = document.querySelectorAll(".tabTit>li")
+    let tabDes = document.querySelector(".tabDes")
+//     let tabDescription = [
+//         `
+//     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eos at dignissimos temporibus voluptate, praesentium laudantium, odio architecto nihil sit minus quae obcaecati doloribus facere tenetur esse ut est corporis?</p>`,
+//     `
+//     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eos at dignissimos temporibus voluptate, praesentium laudantium, odio architecto nihil sit minus quae obcaecati doloribus facere tenetur esse ut est corporis?</p>`,
+//     `
+//     <ul>
+//         <li>des1</li>
+//         <li>des2</li>
+//         <li>des3</li>
+//         <li>des4</li>
+//     </ul>`
+// ]
+
+    for(let i=0 ; i<tabTitles.length ; i++){
+        tabTitles[i].addEventListener("click",function(e){
+            
+            for(let j=0 ; j<tabTitles.length ; j++){
+                tabTitles[j].classList.remove("on")
+            }
+            this.classList.add("on")
+            tabDes.innerHTML = tabDescription[i]
+        })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
 
 
